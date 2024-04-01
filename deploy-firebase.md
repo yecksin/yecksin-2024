@@ -1,0 +1,2 @@
+- firebase experiments:enable webframeworks
+- firebase init hosting
