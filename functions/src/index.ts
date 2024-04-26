@@ -14,6 +14,8 @@ import * as logger from "firebase-functions/logger";
 // https://firebase.google.com/docs/functions/typescript
 
 export const getWSP = onRequest((request, response) => {
-  logger.info("Hello logs!", {structuredData: true});
-  response.send("Hello from Firebase!");
+    const body = request.body;
+    logger.info(body, {structuredData: true});
+  logger.info("Hello logs! 33", {structuredData: true});
+  response.send("Hello from Firebase! 45");
 });
