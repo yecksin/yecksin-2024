@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -8,6 +8,7 @@ import { RouterOutlet } from '@angular/router';
   imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent {
   title = 'yecksin';
@@ -16,14 +17,5 @@ export class AppComponent {
 
   constructor(public http: HttpClient) {}
 
-  ngOnInit(): void {
-    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
-    //Add 'implements OnInit' to the class.
-    // cosnume this https://jsonplaceholder.typicode.com/users
-
-    this.http.get('https://jsonplaceholder.typicode.com/users').subscribe((data) => {
-      console.log(data);
-      this.list2 = data;
-    });
-  }
+  ngOnInit(): void {}
 }
