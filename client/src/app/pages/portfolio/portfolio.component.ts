@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SidebarComponent } from './organisms/sidebar/sidebar.component';
+import { SidebarComponent } from '../../components/organisms/sidebar/sidebar.component';
 
 @Component({
   selector: 'app-portfolio',
