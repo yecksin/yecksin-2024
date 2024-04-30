@@ -1,7 +1,7 @@
 <div class="sidebar">
-  @for (item of [1,1,1]; track $index) {
+  @for (item of this.sectionList; track $index) {
   <div class="sidebar_button">
-    <atom-icon></atom-icon>
+    <atom-icon [name]="item.icon"></atom-icon>
     <atom-text>test</atom-text>
   </div>
   }

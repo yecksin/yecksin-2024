@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { title } from 'process';
 
 export const routes: Routes = [
   {
@@ -6,12 +7,27 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/portfolio/portfolio.component'),
     children: [
       {
-        path: 'works',
-        loadComponent: () => import('./pages/portfolio/pages/works/works.component'),
+        path: 'services',
+        loadComponent: () => import('./pages/portfolio/pages/projects/projects.component'),
         data: {
-          icon: 'fa-solid fa-spell-check',
-          title: 'Ortografía',
-          description: 'Corregir ortografía',
+          icon: 'web_fill',
+          title: 'Services',
+        },
+      },
+      {
+        path: 'projects',
+        loadComponent: () => import('./pages/portfolio/pages/projects/projects.component'),
+        data: {
+          icon: 'laptop_fill',
+          title: 'Projects',
+        },
+      },
+      {
+        path: 'about',
+        loadComponent: () => import('./pages/portfolio/pages/projects/projects.component'),
+        data: {
+          icon: 'user_2_fill',
+          title: 'About me',
         },
       },
     ],

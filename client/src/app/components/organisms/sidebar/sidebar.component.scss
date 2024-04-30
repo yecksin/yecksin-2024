@@ -3,15 +3,15 @@
   place-items: center;
   gap: 30px;
   .sidebar_button {
-    background-color: var(bg-gray-1);
+    background-color: var(--gray-1);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 2px;
     color: white;
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
     text-align: center;
     border-radius: 8px;
   }
