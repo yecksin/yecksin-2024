@@ -1,0 +1,25 @@
+body {
+  background: rgb(5, 33, 42);
+  background: radial-gradient(circle, rgba(5, 33, 42, 1) 0%, rgba(14, 14, 14, 1) 100%);
+}
+
+:root {
+  --gray-1: #262626;
+  --gray-2: #aeaeae;
+}
+
+.bg-gray-1 {
+  background-color: var(--gray-1);
+}
+
+.text-gra-1 {
+  color: var(--gray-1);
+}
+
+.bg-gray-2 {
+  background-color: var(--gray-2);
+}
+
+.text-gray-2 {
+  color: var(--gray-2);
+}
