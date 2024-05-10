@@ -1,8 +1,14 @@
 <div class="sidebar">
   @for (item of this.sectionList; track $index) {
-  <div class="sidebar_button">
-    <atom-icon [name]="item.icon"></atom-icon>
-    <atom-text>test</atom-text>
+  <div
+    class="sidebar_button {{
+      rla.isActive ? 'bg-primary-blue bg-primary-blue-shadow' : 'defaultColor'
+    }}"
+    [routerLink]="item.path"
+    routerLinkActive="router-link-active"
+    #rla="routerLinkActive">
+    <atom-icon [name]="item.icon" [color]="rla.isActive ? 'iwhite' : 'igray-2'"></atom-icon>
+    <atom-text [color]="rla.isActive ? 'iwhite' : 'igray-2'">{{ item.title }}</atom-text>
   </div>
   }
 </div>

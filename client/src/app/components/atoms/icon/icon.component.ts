@@ -8,5 +8,6 @@ import { Component, Input } from '@angular/core';
   styleUrl: './icon.component.scss',
 })
 export class IconComponent {
-  @Input() name: string = 'emoji_fill';
+  @Input() name: string = 'sentiment_satisfied';
+  @Input() color: string = '';
 }

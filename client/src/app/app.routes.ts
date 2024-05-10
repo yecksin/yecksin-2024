@@ -10,7 +10,7 @@ export const routes: Routes = [
         path: 'services',
         loadComponent: () => import('./pages/portfolio/pages/projects/projects.component'),
         data: {
-          icon: 'web_fill',
+          icon: 'badge',
           title: 'Services',
         },
       },
@@ -18,7 +18,7 @@ export const routes: Routes = [
         path: 'projects',
         loadComponent: () => import('./pages/portfolio/pages/projects/projects.component'),
         data: {
-          icon: 'laptop_fill',
+          icon: 'laptop_mac',
           title: 'Projects',
         },
       },
@@ -26,7 +26,7 @@ export const routes: Routes = [
         path: 'about',
         loadComponent: () => import('./pages/portfolio/pages/projects/projects.component'),
         data: {
-          icon: 'user_2_fill',
+          icon: 'person',
           title: 'About me',
         },
       },

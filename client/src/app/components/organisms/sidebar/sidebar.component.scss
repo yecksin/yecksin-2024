@@ -3,16 +3,22 @@
   place-items: center;
   gap: 30px;
   .sidebar_button {
-    background-color: var(--gray-1);
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 2px;
     color: white;
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     text-align: center;
     border-radius: 8px;
+    atom-text {
+      margin-top: -5px;
+    }
+
+    &.defaultColor {
+      background-color: var(--gray-1);
+    }
   }
 }

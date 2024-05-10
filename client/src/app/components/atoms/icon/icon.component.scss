@@ -1,4 +1,10 @@
-i:before {
-  color: var(--gray-2) !important;
-  font-size: 50px;
+i {
+  font-size: 40px;
+  &.iwhite {
+    color: var(--white) !important;
+  }
+
+  &.igray-2 {
+    color: var(--gray-2) !important;
+  }
 }

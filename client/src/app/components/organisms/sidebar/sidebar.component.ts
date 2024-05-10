@@ -3,11 +3,12 @@ import { IconComponent } from '../../atoms/icon/icon.component';
 import { TextComponent } from '../../atoms/text/text.component';
 import { routes } from '../../../app.routes';
 import { RoutingData } from '../../../interfaces/route-list.interface';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: '[organism-sidebar]',
   standalone: true,
-  imports: [IconComponent, TextComponent],
+  imports: [IconComponent, TextComponent, RouterLink, RouterLinkActive],
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.scss',
 })
@@ -19,7 +20,11 @@ export class SidebarComponent {
     //Add 'implements OnInit' to the class.
 
     this.sectionList =
-      routes[0].children?.filter((route) => route.data).map((item) => item.data) || [];
+      routes[0].children
+        ?.filter((route) => route.data)
+        .map((item) => {
+          return { ...item.data, path: item.path };
+        }) || [];
 
     console.log(this.sectionList);
   }
