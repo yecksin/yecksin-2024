@@ -1,1 +1,7 @@
-<div class="text  {{ this.color }}"><ng-content></ng-content></div>
+<div
+  class="text  {{ this.colorClass }} "
+  [style.font-weight]="this.weight"
+  [style.font-size.px]="this.size"
+  [style.text-align]="this.align">
+  <ng-content></ng-content>
+</div>

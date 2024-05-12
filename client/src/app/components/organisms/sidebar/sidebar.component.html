@@ -8,7 +8,7 @@
     routerLinkActive="router-link-active"
     #rla="routerLinkActive">
     <atom-icon [name]="item.icon" [color]="rla.isActive ? 'iwhite' : 'igray-2'"></atom-icon>
-    <atom-text [color]="rla.isActive ? 'iwhite' : 'igray-2'">{{ item.title }}</atom-text>
+    <atom-text [colorClass]="rla.isActive ? 'iwhite' : 'igray-2'">{{ item.title }}</atom-text>
   </div>
   }
 </div>

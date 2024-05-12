@@ -8,5 +8,8 @@ import { Component, Input } from '@angular/core';
   styleUrl: './text.component.scss',
 })
 export class TextComponent {
-  @Input() color: string = '';
+  @Input() colorClass: string = '';
+  @Input() weight: number = 0;
+  @Input() size: number = 12;
+  @Input() align: 'center' | 'start' = 'start';
 }

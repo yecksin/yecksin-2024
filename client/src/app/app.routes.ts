@@ -8,7 +8,7 @@ export const routes: Routes = [
     children: [
       {
         path: 'services',
-        loadComponent: () => import('./pages/portfolio/pages/projects/projects.component'),
+        loadComponent: () => import('./pages/portfolio/pages/services/services.component'),
         data: {
           icon: 'badge',
           title: 'Services',
@@ -24,7 +24,7 @@ export const routes: Routes = [
       },
       {
         path: 'about',
-        loadComponent: () => import('./pages/portfolio/pages/projects/projects.component'),
+        loadComponent: () => import('./pages/portfolio/pages/about/about.component'),
         data: {
           icon: 'person',
           title: 'About me',
