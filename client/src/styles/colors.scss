@@ -18,8 +18,8 @@ body {
 }
 
 .text-gradient-blue{
-  background: linear-gradient(315deg, rgba(68, 164, 243, 1) 0%, rgba(31, 204, 242, 1) 97%);
-  background-clip: border-box;
+ background: -webkit-linear-gradient(0deg,#45A0F4 40%, #29F6D5 60%);
+ background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
