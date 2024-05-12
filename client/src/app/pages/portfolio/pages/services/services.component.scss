@@ -2,3 +2,24 @@
   padding-top: 50px;
   padding-right: 200px;
 }
+
+.banner {
+  padding-top: 100px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.title {
+  display: inline-block !important;
+  atom-text {
+    display: inline-block;
+  }
+}
+
+img.reporting {
+  width: 500px;
+}
