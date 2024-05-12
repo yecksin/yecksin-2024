@@ -2,6 +2,13 @@
   display: grid;
   place-items: center;
   gap: 30px;
+  &:hover {
+    opacity: 1 !important;
+  }
+
+  &.hide {
+    opacity: 0.05;
+  }
   .sidebar_button {
     cursor: pointer;
     display: flex;

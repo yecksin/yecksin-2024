@@ -1,7 +1,7 @@
-<div class="sidebar">
+<div class="sidebar {{ hideSidebar() && 'hide' }}">
   @for (item of this.sectionList; track $index) {
   <div
-    class="sidebar_button {{
+    class="sidebar_button  {{
       rla.isActive ? 'bg-primary-blue bg-primary-blue-shadow' : 'defaultColor'
     }}"
     [routerLink]="item.path"
