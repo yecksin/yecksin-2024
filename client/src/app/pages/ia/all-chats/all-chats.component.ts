@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { ChatComponent } from '../../../components/organisms/chat/chat.component';
 import { ChatsService } from '../services/chats.service';
 
@@ -8,6 +8,7 @@ import { ChatsService } from '../services/chats.service';
   imports: [ChatComponent],
   templateUrl: './all-chats.component.html',
   styleUrl: './all-chats.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export default class AllChatsComponent {
   chatsSE = inject(ChatsService);

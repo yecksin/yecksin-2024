@@ -1,11 +1,14 @@
 <div class="ia-chat">
   <div class="header">
-    <div class="title">English</div>
+    <div class="title">{{ signal().title }}</div>
     <atom-icon color="text-white" bgColor="--primary-2" name="tune" [size]="25"></atom-icon>
   </div>
 
   <div class="chat">
     <div class="messages">
+      @for (meessage of signal().messages; track $index) {
+      <div class="message" [attr.from]="meessage.sender">{{ meessage.text }}</div>
+      }
       <div class="message" [attr.from]="'me'">Hola</div>
       <div class="message" [attr.from]="'assistent'">chao</div>
     </div>

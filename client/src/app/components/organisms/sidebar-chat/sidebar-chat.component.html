@@ -1,10 +1,10 @@
 <div class="sidebar">
   <atom-text [weight]="700" align="center" [size]="20">All chats</atom-text>
   <div class="options">
-    @for (option of this.chatsSE.chats(); track option.id) {
+    @for (option of this.chatsSE.chats(); track option().id) {
     <div class="option">
-      <atom-text>{{ option.title }}</atom-text>
-      <atom-input-checkbox-switch [value]="option.checked"></atom-input-checkbox-switch>
+      <atom-text>{{ option().title }}</atom-text>
+      <atom-input-checkbox-switch [signal]="option" attr="checked"></atom-input-checkbox-switch>
     </div>
     }
   </div>

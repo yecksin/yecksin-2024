@@ -14,8 +14,9 @@
     .title {
       border-radius: 5px;
       color: white;
-      padding: 10px 30px;
+      padding: 7px 20px;
       background-color: rgb(48, 48, 48);
+      font-size: 12px;
     }
   }
   .chat {
@@ -25,18 +26,24 @@
     border-radius: 20px;
     width: 100%;
     box-sizing: border-box;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     .messages {
       display: flex;
       flex-direction: column;
       gap: 10px;
       padding: 10px 0px;
+      overflow-y: auto;
       .message {
-        width: 50%;
+        width: 80%;
         padding: 8px;
         padding-left: 20px;
         box-sizing: border-box;
-        box-shadow: #0000003b 0px 0px 10px 1px;
+        // box-shadow: #0000003b 0px 0px 10px 1px;
+        font-size: 12px;
 
         //
         color: white;

@@ -1,8 +1,5 @@
 <div class="local_container">
-  @for (chat of this.chatsSE.chats(); track $index) {
-  <div>
-    <div style="color: white">checked: {{ chat.checked }}</div>
-    <organism-chat></organism-chat>
-  </div>
-  }
+  @for (chat of this.chatsSE.chats(); track $index) { @if (chat().checked) {
+  <organism-chat [signal]="chat"></organism-chat>
+  } }
 </div>

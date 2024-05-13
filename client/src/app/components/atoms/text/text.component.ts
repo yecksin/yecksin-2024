@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
 @Component({
   selector: 'atom-text',
@@ -6,6 +6,7 @@ import { Component, Input } from '@angular/core';
   imports: [],
   templateUrl: './text.component.html',
   styleUrl: './text.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TextComponent {
   @Input() colorClass: string = 'text-white';
