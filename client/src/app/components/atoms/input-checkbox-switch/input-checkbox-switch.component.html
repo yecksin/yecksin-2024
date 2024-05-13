@@ -1,4 +1,4 @@
 <label class="switch">
-  <input type="checkbox" [checked]="false" />
+  <input type="checkbox" [checked]="this.value" (change)="changeValue($event)" />
   <span class="slider round"></span>
 </label>

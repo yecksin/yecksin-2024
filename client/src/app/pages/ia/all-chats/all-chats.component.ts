@@ -1,11 +1,14 @@
-import { Component } from '@angular/core';
-import { IconComponent } from '../../../components/atoms/icon/icon.component';
+import { Component, inject } from '@angular/core';
+import { ChatComponent } from '../../../components/organisms/chat/chat.component';
+import { ChatsService } from '../services/chats.service';
 
 @Component({
   selector: 'app-all-chats',
   standalone: true,
-  imports: [IconComponent],
+  imports: [ChatComponent],
   templateUrl: './all-chats.component.html',
   styleUrl: './all-chats.component.scss',
 })
-export default class AllChatsComponent {}
+export default class AllChatsComponent {
+  chatsSE = inject(ChatsService);
+}

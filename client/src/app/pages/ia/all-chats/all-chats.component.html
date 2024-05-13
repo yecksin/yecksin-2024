@@ -1,16 +1,8 @@
 <div class="local_container">
-  <div class="ia-chat">
-    <div class="header">
-      <div class="title">English</div>
-      <atom-icon color="text-white" bgColor="--primary-2" name="tune" [size]="25"></atom-icon>
-    </div>
-
-    <div class="chat">
-      <div class="messages">
-        <div class="message" [attr.from]="'me'">Hola</div>
-        <div class="message" [attr.from]="'assistent'">chao</div>
-      </div>
-      <div class="input-container shadow-1"><input type="text" placeholder="Message" /></div>
-    </div>
+  @for (chat of this.chatsSE.chats(); track $index) {
+  <div>
+    <div style="color: white">checked: {{ chat.checked }}</div>
+    <organism-chat></organism-chat>
   </div>
+  }
 </div>
