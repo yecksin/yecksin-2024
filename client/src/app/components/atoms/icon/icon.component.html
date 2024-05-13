@@ -1,1 +1,6 @@
-<i class="material-symbols-outlined {{ this.color }}"> {{ name || 'sentiment_satisfied' }} </i>
+<i
+  class="material-symbols-outlined {{ this.color }} {{ this.bgColor && 'icon-bg' }}"
+  [style.background]="'var(' + this.bgColor + ')'"
+  [style.font-size.px]="this.size">
+  {{ name || 'sentiment_satisfied' }}
+</i>

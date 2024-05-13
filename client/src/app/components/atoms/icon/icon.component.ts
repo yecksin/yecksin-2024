@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
 @Component({
   selector: 'atom-icon',
@@ -6,8 +6,11 @@ import { Component, Input } from '@angular/core';
   imports: [],
   templateUrl: './icon.component.html',
   styleUrl: './icon.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class IconComponent {
   @Input() name: string = 'sentiment_satisfied';
   @Input() color: string = '';
+  @Input() bgColor: string = '';
+  @Input() size: number = 20;
 }

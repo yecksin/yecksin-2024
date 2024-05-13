@@ -6,24 +6,26 @@ body {
 :root {
   --gray-1: #262626;
   --gray-2: #aeaeae;
-  --white: red:
+  --primary-1: #29f6d5;
+  --primary-2: #45a0f4;
+  --white: white;
 }
 
 .bg-primary-blue {
   background: linear-gradient(315deg, rgba(68, 164, 243, 1) 0%, rgba(31, 204, 242, 1) 97%);
 }
 
-.bg-primary-blue-shadow{
+.bg-primary-blue-shadow {
   box-shadow: 0px 0px 10px 0px rgba(68, 164, 243, 1);
 }
 
-.text-gradient-blue{
- background: -webkit-linear-gradient(0deg,#45A0F4 40%, #29F6D5 60%);
- background-clip: border-box;
+.text-gradient-blue {
+  background: -webkit-linear-gradient(0deg, #45a0f4 40%, #29f6d5 60%);
+  background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.text-white{
+.text-white {
   color: white;
 }

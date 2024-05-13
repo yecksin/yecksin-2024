@@ -8,3 +8,11 @@ i {
     color: var(--gray-2) !important;
   }
 }
+
+.icon-bg {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
