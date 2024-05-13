@@ -1,11 +1,15 @@
 import { Routes } from '@angular/router';
-import { title } from 'process';
 
 export const routes: Routes = [
   {
     path: 'portfolio',
     loadComponent: () => import('./pages/portfolio/portfolio.component'),
     children: [
+      {
+        path: '',
+        redirectTo: 'services',
+        pathMatch: 'full',
+      },
       {
         path: 'services',
         loadComponent: () => import('./pages/portfolio/pages/services/services.component'),
@@ -29,6 +33,16 @@ export const routes: Routes = [
           icon: 'person',
           title: 'About me',
         },
+      },
+    ],
+  },
+  {
+    path: 'ia',
+    loadComponent: () => import('./pages/ia/ia.component'),
+    children: [
+      {
+        path: '',
+        loadComponent: () => import('./pages/ia/all-chats/all-chats.component'),
       },
     ],
   },

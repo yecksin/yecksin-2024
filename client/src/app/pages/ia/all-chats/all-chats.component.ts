@@ -5,8 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './all-chats.component.html',
-  styleUrl: './all-chats.component.scss'
+  styleUrl: './all-chats.component.scss',
 })
-export class AllChatsComponent {
-
-}
+export default class AllChatsComponent {}
